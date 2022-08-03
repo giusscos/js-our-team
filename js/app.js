@@ -38,8 +38,10 @@ const team = [
     },
 ]
 
-// console.log(team)
+const divEl = document.querySelector('.container');
+
 for(let key in team){
     const value = team[key];
-    console.log('Name >> ' + value.nome + '; Role >> ' + value.role + '; Image >> ' + value.image + ';');
+    // console.log('Name >> ' + value.nome + '; Role >> ' + value.role + '; Image >> ' + value.image + ';');
+    divEl.innerHTML += ` Name: ${value.nome}; Role: ${value.role}; Image: ${value.image}; <br>`;
 }
