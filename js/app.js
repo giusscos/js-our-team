@@ -39,3 +39,7 @@ const team = [
 ]
 
 // console.log(team)
+for(let key in team){
+    const value = team[key];
+    console.log('Name >> ' + value.nome + '; Role >> ' + value.role + '; Image >> ' + value.image + ';');
+}
