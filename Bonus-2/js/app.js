@@ -35,7 +35,7 @@ for(let key in team){
 }
 
 function createCard(srcImage, nameProfile, roleProfile){
-    const cardEl = document.createElement('div');
+    const cardEl = document.createElement('li');
     cardEl.classList.add('card');
     const infoEl = document.createElement('div');
     infoEl.classList.add('info_profile', 'col');
